@@ -4,8 +4,8 @@ FROM python:3.9
 # Set the working directory
 WORKDIR /app
 
-# Copy the Flask app to the container directory (/app)
-COPY app.py .
+# Copy all files (.) to the container directory (/app or .)
+COPY . .
 
 # Install Flask
 RUN pip install -r requirements.txt
